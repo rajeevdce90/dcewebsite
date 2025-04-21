@@ -14,14 +14,15 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo"><img src="./images/logo.svg" alt="DCE Infosec LLC Logo"></a>
+        <a href="index.html" class="logo"><img src="./images/logo.svg" alt="DCE Infosec LLC"></a>
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="opensearch-siem.html">OpenSearch SIEM</a></li>
-                <li><a href="soc.html" style="color: #00bfff;">SOC Service</a></li>
+                <li><a href="soc.html" class="active">SOC Service</a></li>
+                <li><a href="government-services.html">Government Services</a></li>
                 <li><a href="index.html#services">All Services</a></li>
                 <li class="get-started"><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
             </ul>
@@ -107,36 +108,32 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <main>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 style="font-size: 2.5rem;">DCE Infosec LLC</h3>
-                    <p style="font-size: 1.5rem;">Your trusted partner in cybersecurity solutions.</p>
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="DCE Infosec">
                 </div>
                 <div class="footer-links">
-                    <h3 style="font-size: 2.2rem;">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html" style="font-size: 1.5rem;">Home</a></li>
-                        <li><a href="index.html#about" style="font-size: 1.5rem;">About</a></li>
-                        <li><a href="soc.html" style="font-size: 1.5rem;">SOC Service</a></li>
-                        <li><a href="opensearch-siem.html" style="font-size: 1.5rem;">OpenSearch SIEM</a></li>
-                        <li><a href="index.html#contact" style="font-size: 1.5rem;">Contact</a></li>
-                    </ul>
+                    <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+                    <a href="terms.html" class="terms-link">Terms of Service</a>
                 </div>
-                <div class="footer-contact">
-                    <h3 style="font-size: 2.2rem;">Contact Us</h3>
-                    <p style="font-size: 1.5rem;">Email: info@dceinfosec.com</p>
-                    <p style="font-size: 1.5rem;">Phone: (123) 456-7890</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p style="font-size: 1.3rem;">&copy; 2024 DCE Infosec LLC. All rights reserved.</p>
+                <p>&copy; 2024 DCE Infosec. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html> 
