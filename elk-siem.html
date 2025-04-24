@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elastic Stack-Powered SIEM Solution by DCE Infosec offers enterprise-grade security with cost-effective pricing. Learn more about our modern, scalable SIEM solution.">
+    <meta name="keywords" content="ELK Stack, Elastic SIEM, SIEM solutions, Security Information and Event Management, Enterprise Security, Cost-effective SIEM">
+    <title>ELK Stack SIEM - DCE Infosec LLC</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .stat-item {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            position: absolute;
+            z-index: 9999;
+            width: 350px;
+            background-color: rgba(0, 191, 255, 0.95);
+            color: white;
+            text-align: left;
+            padding: 15px;
+            border-radius: 6px;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(0, 191, 255, 0.95) transparent transparent transparent;
+        }
+
+        .stat-item:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./images/logo.svg" alt="DCE Infosec"></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="elk-siem.html" style="color: #00bfff;">ELK Stack SIEM</a></li>
+                <li><a href="opensearch-siem.html">OpenSearch SIEM</a></li>
+                <li class="services-dropdown">
+                    <a href="#">All Services</a>
+                    <div class="dropdown-content">
+                        <a href="soc.html">SOC Service</a>
+                        <a href="government-services.html">Government Services</a>
+                        <a href="detection-services.html">Detection & SIEM Engineering</a>
+                        <a href="index.html#services">View All Services</a>
+                    </div>
+                </li>
+                <li class="get-started"><a href="https://calendly.com/rajeev-dceinfosec" target="_blank" class="btn-primary">Schedule Demo</a></li>
+                <li class="get-started"><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="content">
+                <h1>ELK Stack-Powered SIEM Solution</h1>
+                <p class="lead">Upgrade your security operations with our enterprise-ready Elastic SIEM solution. Leverage the full power of the Elastic Stack—without the complexity. Our ready-to-deploy templates and built-in detections save you weeks of setup and tuning.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>30-60% Cost Savings</span>
+                        <div class="tooltip-text">🚀 Enterprise-ready SIEM with ML detections and rich dashboards</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Enterprise-Grade Security</span>
+                        <div class="tooltip-text">🔒 Secure & compliant with RBAC, audit logs, and cloud flexibility</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Real-Time Threat Detection</span>
+                        <div class="tooltip-text">🧩 Deploy instantly using our prebuilt, production-ready templates</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="card-header">
+                        <h3>Traditional SIEM</h3>
+                        <p class="subtitle">Expensive and Complex</p>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-times"></i> $150–$300 per GB/day</li>
+                        <li><i class="fas fa-times"></i> Limited to 30–90 days data retention</li>
+                        <li><i class="fas fa-times"></i> Complex, tiered pricing structures</li>
+                        <li><i class="fas fa-times"></i> Hidden costs for infrastructure and support</li>
+                        <li><i class="fas fa-times"></i> Proprietary, rigid platforms</li>
+                        <li><i class="fas fa-times"></i> $500K+ annual cost for large organizations</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-card featured">
+                    <div class="card-header">
+                        <h3>ELK Stack SIEM</h3>
+                        <p class="subtitle">Modern and Cost-Effective</p>
+                    </div>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-check"></i> ~$95 per GB/day (Elastic Cloud)</li>
+                        <li><i class="fas fa-check"></i> Flexible data retention options</li>
+                        <li><i class="fas fa-check"></i> Transparent, simple pricing</li>
+                        <li><i class="fas fa-check"></i> No hidden costs—everything included</li>
+                        <li><i class="fas fa-check"></i> Highly customizable platform</li>
+                        <li><i class="fas fa-check"></i> Up to 60% lower Total Cost of Operation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-database"></i>
+                            <h3>Unified Data Ingestion</h3>
+                            <p>Seamlessly collect and process logs, metrics, and traces from any source with Logstash and Beats.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Built-in SIEM Module</h3>
+                            <p>Pre-built security rules and dashboards for immediate threat detection and response.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning</h3>
+                            <p>Advanced anomaly detection and behavioral analysis for proactive threat hunting.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Automation & Response</h3>
+                            <p>Automated alerting and response workflows to streamline security operations.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefits-section">
+                        <h3>Enterprise-Grade Security Features</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-user-shield"></i>
+                                <h4>Role-Based Access</h4>
+                                <p>Granular access control and audit logging with Platinum/Enterprise license.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Advanced Analytics</h4>
+                                <p>Powerful visualization and analysis tools with Kibana dashboards.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-cloud"></i>
+                                <h4>Flexible Deployment</h4>
+                                <p>Deploy on-premises or in the cloud with Elastic Cloud.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="cta-box">
+                        <h3>Ready to Save?</h3>
+                        <div class="savings-calculator">
+                            <h4>Typical Annual Savings</h4>
+                            <div class="savings-tiers">
+                                <div class="tier">
+                                    <span class="size">Small</span>
+                                    <span class="amount">$50K+</span>
+                                    <span class="volume">100GB/day</span>
+                                </div>
+                                <div class="tier">
+                                    <span class="size">Medium</span>
+                                    <span class="amount">$200K+</span>
+                                    <span class="volume">500GB/day</span>
+                                </div>
+                                <div class="tier">
+                                    <span class="size">Large</span>
+                                    <span class="amount">$500K+</span>
+                                    <span class="volume">1TB/day</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://calendly.com/rajeev-dceinfosec" target="_blank" class="btn btn-primary">Schedule Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <h2>See the Power of ELK Stack SIEM</h2>
+                <p>Schedule a personalized demo to see how our ELK Stack SIEM solution can transform your security operations.</p>
+                <div class="demo-features">
+                    <div class="demo-feature">
+                        <i class="fas fa-clock"></i>
+                        <h4>30-Minute Overview</h4>
+                        <p>Quick but comprehensive demonstration of key features</p>
+                    </div>
+                    <div class="demo-feature">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Expert-Led</h4>
+                        <p>Guided by our security specialists</p>
+                    </div>
+                    <div class="demo-feature">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Customized Demo</h4>
+                        <p>Tailored to your specific security needs</p>
+                    </div>
+                </div>
+                <div class="demo-cta">
+                    <a href="https://calendly.com/rajeev-dceinfosec" target="_blank" class="btn">Schedule Your Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .footer {
+            background: #1a1a1a;
+            padding: 4rem 0;
+            color: #ffffff;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-logo {
+            flex: 0 0 auto;
+        }
+        .footer-logo img {
+            width: 180px;
+            height: auto;
+        }
+        .footer-right {
+            flex: 1;
+            margin-left: 4rem;
+            text-align: right;
+        }
+        .footer-links {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .footer-links a {
+            display: block;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #00bfff;
+        }
+        .footer-social {
+            margin-bottom: 2rem;
+            text-align: right;
+        }
+        .footer-social a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .footer-social a:hover {
+            color: #00bfff;
+        }
+        .footer-bottom {
+            text-align: right;
+        }
+        .footer-bottom p {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+        .footer-bottom i {
+            margin-right: 0.5rem;
+            color: #00bfff;
+        }
+    </style>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="DCE Infosec">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="privacy.html" class="privacy-link" style="font-size: 1.4rem;">Privacy Policy</a>
+                        <a href="terms.html" class="terms-link" style="font-size: 1.4rem;">Terms of Service</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/dce-infosecllc" target="_blank" class="social-link"><i class="fab fa-linkedin" style="font-size: 2.4rem;"></i></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <p style="font-size: 1.4rem;">&copy; 2024 DCE Infosec. All rights reserved.</p>
+                        <p style="margin-top: 1rem; font-size: 1.4rem;">
+                            <i class="fas fa-envelope"></i> info@dceinfosec.com<br>
+                            <i class="fas fa-phone"></i> +1 2818514216
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 

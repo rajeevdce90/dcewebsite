@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Development & SIEM Engineering Services - DCE Infosec</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .stat-item {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: left;
+            padding: 20px;
+            border-radius: 6px;
+            top: 50%;
+            left: 120%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent rgba(0, 0, 0, 0.9) transparent transparent;
+        }
+
+        .stat-item:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        .footer {
+            background: #1a1a1a;
+            padding: 4rem 0;
+            color: #ffffff;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-logo {
+            flex: 0 0 auto;
+        }
+        .footer-logo img {
+            width: 180px;
+            height: auto;
+        }
+        .footer-right {
+            flex: 1;
+            margin-left: 4rem;
+            text-align: right;
+        }
+        .footer-links {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .footer-links a {
+            display: block;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #00bfff;
+        }
+        .footer-social {
+            margin-bottom: 2rem;
+            text-align: right;
+        }
+        .footer-social a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .footer-social a:hover {
+            color: #00bfff;
+        }
+        .footer-bottom {
+            text-align: right;
+        }
+        .footer-bottom p {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+        .footer-bottom i {
+            margin-right: 0.5rem;
+            color: #00bfff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./images/logo.svg" alt="DCE Infosec"></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="elk-siem.html">ELK Stack SIEM</a></li>
+                <li><a href="opensearch-siem.html">OpenSearch SIEM</a></li>
+                <li class="services-dropdown">
+                    <a href="#">All Services</a>
+                    <div class="dropdown-content">
+                        <a href="soc.html">SOC Service</a>
+                        <a href="government-services.html">Government Services</a>
+                        <a href="detection-services.html" style="color: #00bfff;">Detection & SIEM Engineering</a>
+                        <a href="index.html#services">View All Services</a>
+                    </div>
+                </li>
+                <li class="get-started"><a href="https://calendly.com/rajeev-dceinfosec" target="_blank" class="btn-primary">Schedule Demo</a></li>
+                <li class="get-started"><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="content">
+                <h1>Detection Development & SIEM Engineering Services</h1>
+                <p class="lead">We help security teams build effective, scalable detection capabilities across modern SIEM platforms.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Custom Detection Rules</span>
+                        <div class="tooltip-text">We develop custom detection rules tailored to your environment, incorporating MITRE ATT&CK framework, threat intelligence, and industry best practices to identify potential security threats and anomalies.</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Platform Expertise</span>
+                        <div class="tooltip-text">Our team has deep expertise across major SIEM platforms including Splunk, ELK Stack, and OpenSearch. We provide end-to-end platform deployment, optimization, and maintenance services.</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Cost Optimization</span>
+                        <div class="tooltip-text">We help optimize your SIEM costs through efficient log management, data routing, retention policies, and smart pipeline configurations - reducing storage costs while maintaining security effectiveness.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Detection Engineering</h3>
+                        <ul>
+                            <li>Custom correlation rules and alerts</li>
+                            <li>MITRE ATT&CK mappings</li>
+                            <li>Threat modeling and use case development</li>
+                            <li>Support for Elastic SIEM, Splunk, and Cribl</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Splunk Deployment</h3>
+                        <ul>
+                            <li>End-to-end Splunk setup (on-prem or cloud)</li>
+                            <li>Index and retention strategy</li>
+                            <li>Search head clustering</li>
+                            <li>Role-based access control</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Cribl Deployment</h3>
+                        <ul>
+                            <li>Cribl Stream setup for log routing</li>
+                            <li>Log reduction and transformation</li>
+                            <li>Integration with Splunk, Elastic, S3, Kafka</li>
+                            <li>Cost optimization via smart data pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-box">
+        <div class="container">
+            <h3>Ready to Enhance Your Detection Capabilities?</h3>
+            <p>Contact us today to discuss how we can help optimize your SIEM deployment and detection engineering.</p>
+            <a href="index.html#contact" class="btn-primary" style="font-size: 2rem; padding: 1.5rem 3rem; display: inline-block; margin-top: 2rem;">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="DCE Infosec">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="privacy.html" class="privacy-link" style="font-size: 1.4rem;">Privacy Policy</a>
+                        <a href="terms.html" class="terms-link" style="font-size: 1.4rem;">Terms of Service</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/dce-infosecllc" target="_blank" class="social-link"><i class="fab fa-linkedin" style="font-size: 2.4rem;"></i></a>
+                    </div>
+                    <div class="footer-bottom">
+                        <p style="font-size: 1.4rem;">&copy; 2024 DCE Infosec. All rights reserved.</p>
+                        <p style="margin-top: 1rem; font-size: 1.4rem;">
+                            <i class="fas fa-envelope"></i> info@dceinfosec.com<br>
+                            <i class="fas fa-phone"></i> +1 2818514216
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 
