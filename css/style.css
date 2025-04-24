@@ -111,7 +111,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 5%;
+    padding: 0.5rem 2%;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -127,12 +127,12 @@ body{
     text-decoration: none;
     font-weight: 600;
     background: transparent;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 5px;
 }
 
 .header .logo img {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -1292,25 +1292,17 @@ body{
 
 @media (max-width: 1000px){
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
-
     .header .logo img{
-        width: 20%;
-        height: 3rem;
-        top: 0;
-        left: 0;
-        background-size: cover;
+        max-width: 60px;
+        margin-left: 0;
     }
-
     .header .fa-bars{
         display: block;
-        color: 	white;
-        margin-right: 1rem;
-    }
-
-    .header .fa-bars:hover{
-        color: #00bfff;
+        font-size: 2.5rem;
+        color: #000000;
+        cursor: pointer;
     }
 
     .header .navbar{
@@ -1916,24 +1908,34 @@ body{
 }
 
 @media (max-width: 768px) {
+    .service-hero {
+        padding-top: 8rem;
+    }
+    .service-hero .container {
+        padding-top: 2rem;
+    }
     .service-hero h1 {
         font-size: 2.5rem;
+        margin-top: 2rem;
     }
-    
     .service-hero .lead {
         font-size: 1.4rem;
+        margin-top: 1rem;
     }
-    
     .service-hero .hero-stats {
         flex-direction: column;
     }
-    
     .service-hero .comparison-card {
         padding: 1.5rem;
     }
-    
     .service-hero .comparison-card .card-header h3 {
         font-size: 1.5rem;
+    }
+    .opensearch-stack, .elk-stack {
+        margin-top: 8rem;
+    }
+    .opensearch-stack h3, .elk-stack h3 {
+        margin-top: 2rem;
     }
 }
 
