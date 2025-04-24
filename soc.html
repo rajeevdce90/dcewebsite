@@ -23,9 +23,9 @@
                 <li><a href="elk-siem.html">ELK Stack SIEM</a></li>
                 <li><a href="opensearch-siem.html">OpenSearch SIEM</a></li>
                 <li class="services-dropdown">
-                    <a href="#">All Services</a>
+                    <a href="index.html#services">All Services</a>
                     <div class="dropdown-content">
-                        <a href="soc.html" style="color: #00bfff;">SOC Service</a>
+                        <a href="soc.html">SOC Service</a>
                         <a href="government-services.html">Government Services</a>
                         <a href="detection-services.html">Detection & SIEM Engineering</a>
                         <a href="index.html#services">View All Services</a>
@@ -116,73 +116,74 @@
         </div>
     </section>
 
-    <main>
-    </main>
-
     <style>
-        .footer {
-            background: #1a1a1a;
-            padding: 4rem 0;
-            color: #ffffff;
+        .service-details {
+            padding: 6rem 0;
+            background: #f8f9fa;
         }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .footer-logo {
-            flex: 0 0 auto;
-        }
-        .footer-logo img {
-            width: 180px;
-            height: auto;
-        }
-        .footer-right {
-            flex: 1;
-            margin-left: 4rem;
-            text-align: right;
-        }
-        .footer-links {
+        .service-details h2 {
+            color: #333;
+            font-size: 3.5rem;
             margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            text-align: center;
         }
-        .footer-links a {
-            display: block;
-            margin-bottom: 1rem;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.4rem;
-            transition: color 0.3s ease;
+        .service-details h3 {
+            color: #333;
+            font-size: 2.5rem;
+            margin: 3rem 0 1.5rem;
         }
-        .footer-links a:hover {
-            color: #00bfff;
-        }
-        .footer-social {
+        .service-details p {
+            font-size: 1.8rem;
+            line-height: 1.8;
+            color: #444;
             margin-bottom: 2rem;
-            text-align: right;
         }
-        .footer-social a {
-            color: #ffffff;
-            transition: color 0.3s ease;
+        .service-details ul {
+            list-style: none;
+            padding-left: 0;
         }
-        .footer-social a:hover {
-            color: #00bfff;
-        }
-        .footer-bottom {
-            text-align: right;
-        }
-        .footer-bottom p {
+        .service-details ul li {
+            font-size: 1.8rem;
+            line-height: 1.8;
+            color: #444;
             margin-bottom: 1rem;
-            color: #ffffff;
-            font-size: 1.4rem;
+            padding-left: 2.5rem;
+            position: relative;
         }
-        .footer-bottom i {
-            margin-right: 0.5rem;
+        .service-details ul li:before {
+            content: "•";
             color: #00bfff;
+            position: absolute;
+            left: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, #00bfff, #0099cc);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .cta-box p {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+        }
+        .cta-box .btn-primary {
+            background: white;
+            color: #00bfff;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .cta-box .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
     </style>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">

@@ -96,4 +96,36 @@ window.addEventListener('scroll', () => {
     homeSection.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.fa-bars');
+    const navbar = document.querySelector('.navbar');
+    
+    menuBtn.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+
+    // Services dropdown toggle for mobile
+    const servicesDropdown = document.querySelector('.services-dropdown');
+    
+    if (servicesDropdown) {
+        servicesDropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 991) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            }
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navbar.contains(e.target) && !menuBtn.contains(e.target)) {
+            navbar.classList.remove('active');
+            if (servicesDropdown) {
+                servicesDropdown.classList.remove('active');
+            }
+        }
+    });
+});
+
 });
