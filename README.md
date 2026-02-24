@@ -42,8 +42,8 @@ A professional website for DCE Infosec LLC, showcasing our cybersecurity, data e
 ## Contact
 
 For any questions or support, please contact:
-- Email: rajeev@dceinfosec.com
-- Phone: (281) 851-4216
+- Email: info@dceinfosec.com
+- Phone: +1 (754) 264-8180
 
 ## License
 
